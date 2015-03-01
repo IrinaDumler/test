@@ -14,6 +14,7 @@ int main(){
   TestMoreStruct tm;
   tm.t = t;
   tm.y = 200;
+  std::cout << "Hello from main" << tm.t.x + tm.y << std::endl;
 
   std::thread t1(hello,1);
   std::thread t2(hello,2);
